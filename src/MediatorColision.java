@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 
 public class MediatorColision {
-	private static ArrayList<Character> character;
-	private static ArrayList<Shot> shot;
 	
 
 	public void testColision(Element element){

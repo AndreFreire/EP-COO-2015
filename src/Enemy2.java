@@ -1,22 +1,22 @@
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Enemy1 extends TimerTask implements Element, Character{
-
+public class Enemy2 extends TimerTask implements Element, Character {
+	
 	EnemyModel enemy;
 	
 	
-	public Enemy1() {//instanciar o enemy
+	public Enemy2() {//instanciar enemy
 		enemy = new EnemyModel();
-		Controller.addEnemy1(this);
-		System.out.println("criou enemy1");
+		Controller.addEnemy2(this);
+		System.out.println("criou enemy2");
 		Timer time = new Timer();
-		time.schedule(this, 0, this.enemy.getMilisecondsShoot());
+		time.schedule(this, 0,this.enemy.getMilisecondsShoot());	
 	}
-	
+
 	@Override
 	public void shoot() {
-		System.out.println("Enemy1 atirou");
+		System.out.println("Enemy2 atirou");
 		
 	}
 
@@ -40,6 +40,7 @@ public class Enemy1 extends TimerTask implements Element, Character{
 
 	@Override
 	public void run() {
+		// TODO Auto-generated method stub
 		this.shoot();
 		
 	}
