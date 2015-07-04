@@ -5,6 +5,7 @@ public class BackGroundCreator {
 	public static void createBackGround(){
 		BackGround bg = new BackGround();
 		Timer time = new Timer();
-		time.schedule(bg, 0,2000);
+		bg.startGraphic();	
+		time.schedule(bg, 0, 50);		
 	}
 }

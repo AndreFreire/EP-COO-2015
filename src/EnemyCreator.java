@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.util.Timer;
 
 public class EnemyCreator {
@@ -6,8 +7,8 @@ public class EnemyCreator {
 		Timer time = new Timer(); 
 		EnemyTask1 st = new EnemyTask1();
 		time.schedule(st, 0, seconds*1000);
-	
 	}
+	
 	public static void createEnemy2(int seconds){
 		Timer time = new Timer(); 
 		EnemyTask2 st = new EnemyTask2();

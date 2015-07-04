@@ -4,6 +4,8 @@ public class EnemyModel {
 	double explosionEnd;
 	double coordX;
 	double coordY;
+	double enemy_radius;
+	double nextShoot;
 	int milisecondsShoot = 1000;
 	public EnemyModel(){}
 	
@@ -14,6 +16,7 @@ public class EnemyModel {
 		this.coordY = coordY;
 		this.milisecondsShoot = milisecondsShoot;
 	}
+	
 	public double getExplosionStart() {
 		return explosionStart;
 	}
@@ -44,4 +47,20 @@ public class EnemyModel {
 	public void setMilisecondsShoot(int milisecondsShoot) {
 		this.milisecondsShoot = milisecondsShoot;
 	}
+	public double getNextShoot() {
+		return nextShoot;
+	}
+
+	public void setNextShoot(double nextShoot) {
+		this.nextShoot = nextShoot;
+	}
+
+	public double getEnemy_radius() {
+		return enemy_radius;
+	}
+
+	public void setEnemy_radius(double enemy_radius) {
+		this.enemy_radius = enemy_radius;
+	}
+	
 }

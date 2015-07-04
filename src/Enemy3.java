@@ -5,11 +5,10 @@ public class Enemy3 extends TimerTask implements Element, Character{
 
 	EnemyModel enemy;
 	
-	
 	public Enemy3() {//instanciar enemy
 		enemy = new EnemyModel();
 		Controller.addEnemy3(this);
-		System.out.println("criou enemy1");
+		System.out.println("criou enemy3 em Enemy3");
 		Timer time = new Timer();
 		time.schedule(this, 0, this.enemy.getMilisecondsShoot()	);
 	}

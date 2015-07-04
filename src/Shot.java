@@ -4,9 +4,8 @@ public class Shot implements Element{
 	@Override
 	public void move(double x, double y) {
 		for( int i =0 ;i <10; i++){
-			System.out.println((x+i)+" - "+(y+i));
+			System.out.println((x)+" - "+(y+i));
 		}
-		
 		
 	}
 
