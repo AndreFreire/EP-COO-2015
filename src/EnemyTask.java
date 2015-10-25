@@ -9,7 +9,7 @@ public class EnemyTask<T> extends TimerTask{
 	}
 
 	public void run(){
-		Character teste = (Character) enemyClass.newInstance();
+		//Character teste = (Character) enemyClass.newInstance();
 		
 
 	}
